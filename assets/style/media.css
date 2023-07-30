@@ -1,0 +1,152 @@
+@media (max-width:1199.99px) {
+  .fashion__content{
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .custom__content-cards{
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width:991.99px) {
+  .nav__search-input{
+    position: absolute;
+    left: 0;
+    height: 60px;
+    border: none;
+    outline: none;
+    width: 0;
+    opacity: 0;
+  }
+  .nav__search:hover
+  .nav__search-input{
+    width: 100%;
+    opacity: 1;
+  }
+  .custom__content-cards{
+    flex-wrap: nowrap;
+    gap: 40px;
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+
+
+  .footer__content-col:nth-child(1){
+    display: none;
+  }
+  .footer__content-col:nth-child(2){
+    display: none;
+  }
+  .footer__content{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  .footer__content-col-list-link span{
+    display: none;
+  }
+  .footer__content-col-list{
+    flex-direction: row;
+  }
+
+  .footer__content-col:nth-child(4){
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: 250px;
+    column-gap: 40px;
+  }
+  .footer__content-col-descr{
+    margin-top: 10px;
+  }
+}
+@media (max-width:767.99px) {
+  .nav{
+    position: relative;
+  }
+
+  .nav__list{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1;
+    gap: 20px;
+    transition: .3s;
+  }
+
+  .nav__list-link span{
+    order: 1;
+  }
+
+  .nav__list-link img{
+    margin-left: 0;
+    margin-right: 4px;
+  }
+
+  .nav__list-link:hover img {
+    transform: rotate(90deg);
+  }
+  
+  .dropdown__list{
+    top: 0;
+    right: 124%;
+    transform: scale(0);
+  }
+
+  .header{
+    overflow: hidden;
+  }
+
+  .dropdown__item:hover .dropdown__list {
+    transform: scale(1);
+  }
+
+  .nav__content-logo{
+    margin-right: auto;
+  }
+
+  .nav__menu-btn{
+    display: flex;
+  }
+
+  .nav__menu:hover
+  .nav__list{
+    right: 0;
+  }
+  .header__content-title{
+    margin: 0 154px;
+    font-size: 40px;
+  }
+}
+@media (max-width:575.99px) {
+  .header__content-subtitle{
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .header__content-title{
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .fashion__text-title{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 25px;
+  }
+  .project__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project__content-btn{
+    padding: 17px 35px;
+  }
+  
+}
